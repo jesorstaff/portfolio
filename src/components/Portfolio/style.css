@@ -1,0 +1,92 @@
+/* Contact BEGIN*/
+.container{
+    width: 800px;
+    margin: 80px auto 60px;
+}
+.container header{
+    position: relative;
+    margin: 0 20px;
+    text-align: left;
+}
+.container header h1{
+    color: #cacaca;
+    font-size: 2.625em;
+    line-height: 1.45em;
+    font-weight: 700;
+    letter-spacing: -2px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.15);
+    font-family: 'Montserrat', sans-serif;
+}
+.container header p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.15em;
+    line-height: 1.7em;
+    color: #8a8a8a;
+}
+.feedback{
+    margin: 80px 20px 0;
+    position: relative;
+}
+/* .feedback form{
+    position: relative;
+} */
+.feedback form input{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 80%;
+    height: 38px;
+    padding: 6px 14px 5px 33px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #797979;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #797979;
+    background-color: #2a2a2a;
+    line-height: 100%;
+}
+.feedback form input:focus{
+  outline-color: 0;
+  outline-style: 0;
+  outline-width: 0;
+}
+
+.feedback button{
+    margin-top: 20px;
+}
+
+.share{
+  margin: 30px 20px 0;
+}
+.share h4{
+  font-size: 1.4em;
+  line-height: 1.7em;
+  color: #8a8a8a;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+.share p{
+  font-size: 1.15em;
+  line-height: 1.7em;
+  color: #8a8a8a;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+.social{
+    margin-top: 20px;
+}
+
+.share button{
+    margin-left: 30px;
+}
+
+.share button:first-child{
+    margin-left: 0;
+}
+
+.share a{
+    margin-left: 30px;
+}
+/* Contact END*/

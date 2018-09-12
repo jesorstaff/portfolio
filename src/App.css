@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.my-about-text{
+  text-align: center;
+  margin-top: 250px;
+}
+.my-about-text h1 {
+  color: #cacaca;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+  line-height: 1.7em;
+  font-weight: 700;
+  letter-spacing: -0.75px;
+  margin: 0;
+  padding: 0;
+}
+.my-about-text h2{
+  color: #8a8a8a;
+  font-size: 1.05em;
+  line-height: 1.9em;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.75px;
+  margin: 0;
+  padding: 0;
+}
+.my-about-text h3{
+  color: #8a8a8a;
+  font-size: 1.05em;
+  line-height: 1.9em;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.75px;
+  margin: 0;
+  padding: 0;
+}
+.my-about-text a{
+  color: #9a9a9a;
+  font-size: 1.15em;
+  line-height: 1.125em;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Follow me */
+.follow-me{
+  z-index: 1001;
+  position: fixed;
+  left: 0;
+  top: calc(50% - (220px / 2));
+  width: 55px;
+  height: 220px;
+}
+
+.follow-me small{
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 100%;
+  text-align: right;
+  color: #7a7a7a;
+  font-weight: 600;
+  font-size: .65em;
+}
+
+.follow-me .vk span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(./images/icons.svg) no-repeat 0 1px;
+  background-size: 100% auto;
+  text-indent: -9999em;
+}
+
+.follow-me .github span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(./images/icons.svg) no-repeat 0 1px;
+  background-size: 100% auto;
+  text-indent: -9999em;
+}
+
+.follow-me .instagram span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(./images/icons.svg) no-repeat 0 1px;
+  background-size: 100% auto;
+  text-indent: -9999em;
+}
+
+.follow-me a{
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 55px;
+  padding-left: 20px;
+  margin-left: -20px;
+  transition: transform 425ms cubic-bezier(.05,.65,.18,1);
+}
+
+.follow-me a:hover{
+  -moz-transform: translate3d(20px,0,0);
+  -ms-transform: translate3d(20px,0,0);
+  -webkit-transform: translate3d(20px,0,0);
+  transform: translate3d(20px,0,0);
+}
+
+.follow-me .vk{
+  display: flex;
+  width: 75px;
+  height: 55px;
+  background-color: #4868ad;
+}
+
+.follow-me .github{
+  display: flex;
+  width: 75px;
+  height: 55px;
+  background-color: #4e545a;
+}
+
+.follow-me .instagram{
+  display: flex;
+  width: 75px;
+  height: 55px;
+  background: radial-gradient(circle at 25% 110%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%),radial-gradient(circle at 25% 110%,#b9a800 0,#938500 5%,#b10f00 45%,#8c0061 60%,#002ca9 90%);
+}
+
+.follow-me .vk span {
+  background-position: -3px -102px;
+}
+
+.follow-me .github span {
+  background-position: 0 -33px;
+}
+
+.follow-me .instagram span{
+  background-position: 0 2px;
+}
+/* Follow me END */
+
+.app-btn{
+  width: 800px;
+  margin: 42px auto 0;
+}
+
+.app-btn a{
+  display: block;
+  text-align: center;
+}

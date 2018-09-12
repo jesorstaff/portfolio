@@ -1,0 +1,146 @@
+/* Active LINK */
+.active{
+    color: #9f9f9f;
+}
+
+/* Burger Menu  START*/
+.burger-menu,
+.burger-menu.open {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+    background: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+.burger-menu .bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+.burger-menu.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+.burger-menu.open .bar2 {
+    opacity: 0;
+}
+.burger-menu.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* Menu */
+
+.menu {
+    display: block;
+    text-align: center;
+    transition: transform .45s cubic-bezier(.45,0,0,1);
+    transform: translate3d(0, 0%,0);
+    /**/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5% 0;
+    position: fixed;
+}
+.menu ul {
+    position: relative;
+    top: 0;
+    font-size: 24px;
+    padding: 0;
+    height: 100%;
+}
+.menu li {
+    list-style: outside none none;
+    margin: 10px 0;
+    padding: 0;
+    cursor: pointer;
+    height: calc(70%/4);
+}
+.menu li:hover {
+    color: #ff0000;
+}
+/* Burger Menu  END*/
+
+/* Effect */
+.menu ul li a {
+    color: #5a5a5a;
+    text-decoration: none;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 2em;
+    background-color: rgba(0,0,0,.02); /* Цвет фона */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+
+    /*-moz-transition: -moz-transform .55s cubic-bezier(0,.35,0,1),color .15s ease-out .1s;
+    -o-transition: -o-transform .55s cubic-bezier(0,.35,0,1),color .15s ease-out .1s;
+    -webkit-transition: -webkit-transform .55s cubic-bezier(0,.35,0,1),color .15s ease-out;
+    -webkit-transition-delay: 0s,.1s;
+    transition: transform .55s cubic-bezier(0,.35,0,1),color .15s ease-out .1s;*/
+}
+.menu ul li a:hover{
+    color: #7f7f7f; /* Меняет цвет текста при наведении */
+    /*transform: translate3d(0,0,0);*/
+}
+.menu ul li a:hover:after, .menu ul li a:hover:before {
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.menu ul li a:before {
+    top: 0;
+    -moz-transform: translate3d(-100%,0,0);
+    -ms-transform: translate3d(-100%,0,0);
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+    background-color: #2e2e2e;
+    z-index: -1;
+}
+.menu ul li a:after, .menu ul li a:before {
+    content: " ";
+    height: 75%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    -moz-transition: -moz-transform .4s cubic-bezier(.65,.15,0,1);
+    -o-transition: -o-transform .4s cubic-bezier(.65,.15,0,1);
+    -webkit-transition: -webkit-transform .4s cubic-bezier(.65,.15,0,1);
+    transition: transform .4s cubic-bezier(.65,.15,0,1);
+}
+.menu ul li a:after {
+    bottom: 0;
+    -moz-transform: translate3d(100%,0,0);
+    -ms-transform: translate3d(100%,0,0);
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+    -moz-transition-delay: 125ms;
+    -o-transition-delay: 125ms;
+    -webkit-transition-delay: 125ms;
+    transition-delay: 125ms;
+    background-color: #2d2d2d;
+    z-index: -2;
+}
+.menu ul li{
+    list-style: none;
+}
+
+/* Effect END */
