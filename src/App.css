@@ -1,12 +1,24 @@
-*{
+* {
   margin: 0;
-  padding: 0;
 }
 
-.my-about-text{
-  text-align: center;
-  margin-top: 250px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.my-about-text {
+  text-align: center;
+}
+
 .my-about-text h1 {
   color: #cacaca;
   font-family: 'Montserrat', sans-serif;
@@ -17,7 +29,8 @@
   margin: 0;
   padding: 0;
 }
-.my-about-text h2{
+
+.my-about-text h2 {
   color: #8a8a8a;
   font-size: 1.05em;
   line-height: 1.9em;
@@ -27,7 +40,8 @@
   margin: 0;
   padding: 0;
 }
-.my-about-text h3{
+
+.my-about-text h3 {
   color: #8a8a8a;
   font-size: 1.05em;
   line-height: 1.9em;
@@ -37,7 +51,8 @@
   margin: 0;
   padding: 0;
 }
-.my-about-text a{
+
+.my-about-text a {
   color: #9a9a9a;
   font-size: 1.15em;
   line-height: 1.125em;
@@ -47,7 +62,7 @@
 }
 
 /* Follow me */
-.follow-me{
+.follow-me {
   z-index: 1001;
   position: fixed;
   left: 0;
@@ -56,18 +71,14 @@
   height: 220px;
 }
 
-.follow-me small{
-  position: absolute;
-  top: 0px;
-  left: 2px;
-  width: 100%;
+.follow-me small {
   text-align: right;
   color: #7a7a7a;
   font-weight: 600;
   font-size: .65em;
 }
 
-.follow-me .vk span{
+.follow-me .vk span {
   display: block;
   width: 35px;
   height: 35px;
@@ -76,7 +87,7 @@
   text-indent: -9999em;
 }
 
-.follow-me .github span{
+.follow-me .github span {
   display: block;
   width: 35px;
   height: 35px;
@@ -85,7 +96,7 @@
   text-indent: -9999em;
 }
 
-.follow-me .instagram span{
+.follow-me .instagram span {
   display: block;
   width: 35px;
   height: 35px;
@@ -94,7 +105,7 @@
   text-indent: -9999em;
 }
 
-.follow-me a{
+.follow-me a {
   display: -webkit-flex;
   -webkit-align-items: center;
   display: flex;
@@ -107,28 +118,28 @@
   transition: transform 425ms cubic-bezier(.05,.65,.18,1);
 }
 
-.follow-me a:hover{
+.follow-me a:hover {
   -moz-transform: translate3d(20px,0,0);
   -ms-transform: translate3d(20px,0,0);
   -webkit-transform: translate3d(20px,0,0);
   transform: translate3d(20px,0,0);
 }
 
-.follow-me .vk{
+.follow-me .vk {
   display: flex;
   width: 75px;
   height: 55px;
   background-color: #4868ad;
 }
 
-.follow-me .github{
+.follow-me .github {
   display: flex;
   width: 75px;
   height: 55px;
   background-color: #4e545a;
 }
 
-.follow-me .instagram{
+.follow-me .instagram {
   display: flex;
   width: 75px;
   height: 55px;
@@ -143,17 +154,17 @@
   background-position: 0 -33px;
 }
 
-.follow-me .instagram span{
+.follow-me .instagram span {
   background-position: 0 2px;
 }
 /* Follow me END */
 
-.app-btn{
+.app-btn {
   width: 800px;
   margin: 42px auto 0;
 }
 
-.app-btn a{
+.app-btn a {
   display: block;
   text-align: center;
 }
