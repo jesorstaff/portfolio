@@ -21,13 +21,10 @@
 
 .my-about-text h1 {
   color: #cacaca;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.8em;
   line-height: 1.7em;
   font-weight: 700;
-  letter-spacing: -0.75px;
-  margin: 0;
-  padding: 0;
+  /* letter-spacing: -0.75px; */
 }
 
 .my-about-text h2 {
@@ -35,10 +32,7 @@
   font-size: 1.05em;
   line-height: 1.9em;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.75px;
-  margin: 0;
-  padding: 0;
 }
 
 .my-about-text h3 {
@@ -46,13 +40,10 @@
   font-size: 1.05em;
   line-height: 1.9em;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.75px;
-  margin: 0;
-  padding: 0;
 }
 
-.my-about-text a {
+.my-about-text h3 a {
   color: #9a9a9a;
   font-size: 1.15em;
   line-height: 1.125em;
@@ -160,11 +151,42 @@
 /* Follow me END */
 
 .app-btn {
-  width: 800px;
   margin: 42px auto 0;
+  max-width: 280px;
 }
-
+/* 
 .app-btn a {
   display: block;
   text-align: center;
+} */
+
+
+/* Анимация текста */
+
+.title {
+  width: 37ch;
+  overflow: hidden;
+  border-right: 4px solid white;
+  white-space: nowrap;
+  animation: printed-text 5s steps(37), flashin-border .75s step-start infinite;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes flashin-border{
+  0%{
+    border-color: orange;
+  }
+  50%{
+    border-color: transparent;
+  }
+  100%{
+    border-color: orange;
+  }
+}
+
+@keyframes printed-text{
+  from {
+    width: 0%;
+  }
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Popup from "reactjs-popup";
 
 import BurgerIcon from '../Menubar/BurgerIcon';
@@ -12,20 +12,22 @@ const contentStyle = {
   border: "none"
 };
 
-class PopupComponent extends Component{
-  render() {
-    return (
-      <Popup
-        modal
-        overlayStyle={{ background: "rgba(255,255,255,0.98" }}
-        contentStyle={contentStyle}
-        closeOnDocumentClick={false}
-        trigger={open => <BurgerIcon open={open} />}
-      >
-        {close => <Menu close={close} />}
-      </Popup>
-    )
-  }
+const overlayStyle = {
+  background: "rgba(255,255,255,0.98)",
+}
+
+const PopupComponent = () => {
+  return (
+    <Popup
+      modal
+      overlayStyle={overlayStyle}
+      contentStyle={contentStyle}
+      closeOnDocumentClick={false}
+      trigger={open => <BurgerIcon open={open} />}
+    >
+      {close => <Menu close={close} />}
+    </Popup>
+  )
 }
 
 export default PopupComponent;
