@@ -94,16 +94,7 @@ class Work extends Component{
     render() {
         return (
             <div>
-                <div className="page-control">
-                    <NavLink to="/portfolio" className="prev">
-                        <span>Обо мне</span>
-                        <em></em>
-                    </NavLink>
-                    <NavLink to="/contact" className="next">
-                        <span>Приложения</span>
-                        <em></em>
-                    </NavLink>
-                </div>
+                <PageNavigation />
                 <div className="wrapper">
                     <PopupComponent />
                     <UI setCategory={this.setCategory} state={this.state} />
@@ -112,6 +103,21 @@ class Work extends Component{
             </div>
         )
     }
+}
+
+const PageNavigation = () => {
+    return (
+        <div className="page-control">
+            <NavLink to="/" className="prev">
+                <span>Обо мне</span>
+                <em></em>
+            </NavLink>
+            <NavLink to="/apps" className="next">
+                <span>Приложения</span>
+                <em></em>
+            </NavLink>
+        </div>
+    )
 }
 
 export default Work;
