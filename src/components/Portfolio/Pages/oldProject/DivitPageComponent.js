@@ -1,5 +1,5 @@
 import React from 'react';
-import PortfolioItemPage from "../PortfolioItemPage";
+import PortfolioItemPage from "../../PortfolioItemPage";
 
 export default () => (
     <PortfolioItemPage

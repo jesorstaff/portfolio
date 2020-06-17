@@ -1,25 +1,28 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-.wrapper{
+.wrapper {
     width: 800px;
     margin: 0 auto;
 }
 
-.portfolio-filter{
+.portfolio-filter {
     margin-top: 20px;
 }
-.portfolio-filter ul{
+
+.portfolio-filter ul {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
+
 .portfolio-filter span {
     position: relative;
     z-index: 2;
 }
-.portfolio-filter ul li{
+
+.portfolio-filter ul li {
     display: inline-block;
     padding: 8px 5px;
     background-color: #313131;
@@ -40,7 +43,8 @@
     position: relative;
     overflow: hidden;
 }
-.portfolio-filter span{
+
+.portfolio-filter span {
     outline-color: 0;
     outline-style: none;
     outline-width: 0;
@@ -90,12 +94,12 @@
     transform: translate3d(0,0,0);
 }
 
-.portfolio-filter ul li a{
+.portfolio-filter ul li a {
     position: relative;
     z-index: 2;
 }
 
-.portfolio-list{
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -103,7 +107,7 @@
     margin: 0 auto;
 }
 
-.portfolio-item{
+.portfolio-item {
     position: relative;
     display: block;
     padding: 1.2em;
@@ -112,7 +116,7 @@
     height: 280px;
 }
 
-.portfolio-item a{
+.portfolio-item a {
     background: #000;
     width: 100%;
     height: 100%;
@@ -120,7 +124,7 @@
     text-decoration: none;
 }
 
-.portfolio-item .bar{
+.portfolio-item .bar {
     display: block;
     position: relative;
     height: 24px;
@@ -130,7 +134,7 @@
     z-index: 10;
 }
 
-.portfolio-item .bar h2{
+.portfolio-item .bar h2 {
     content: attr(data-text);
     text-align: center;
     font-size: 10px;
@@ -142,7 +146,7 @@
     color: #8a8a8a;
 }
 
-.portfolio-item .bar i, .portfolio-item .bar i:after, .portfolio-item .bar i:before{
+.portfolio-item .bar i, .portfolio-item .bar i:after, .portfolio-item .bar i:before {
     height: 12px;
     width: 12px;
     display: inline-block;
@@ -153,23 +157,24 @@
     left: 10px;
 }
 
-.portfolio-item .bar i:after{
+.portfolio-item .bar i:after {
     content: " ";
     left: 32px;
     background-color: #28ca41;
     top: 0;
 }
 
-.portfolio-item .bar i:before{
+.portfolio-item .bar i:before {
     content: " ";
     left: 16px;
     background-color: #ffbd2e;
     top: 0;
 }
 
-.portfolio-item .main{
+.portfolio-item .main {
     background-size: cover;
-    padding-top: 58%;
+    /*padding-top: 58%;*/
+    padding-top: 60%;
     position: relative;
     background-position: center center;
     display: block;
@@ -179,7 +184,7 @@
     transform-style: flat;
 }
 
-.portfolio-item .main img{
+.portfolio-item .main img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -188,7 +193,7 @@
 }
 
 
-footer{
+footer {
     line-height: 20px;
     color: #8a8a8a;
     margin-top: 42px;
@@ -196,7 +201,7 @@ footer{
     margin-bottom: 42px;
 }
 
-footer h4{
+footer h4 {
     color: #cacaca;
     font-weight: 700;
     margin-bottom: 2px;
@@ -210,7 +215,7 @@ footer p {
     font-family: 'Montserrat', sans-serif;
 }
 
-footer a{
+footer a {
     color: #9a9a9a;
     font-size: 1.15em;
     line-height: 1.125em;
@@ -296,7 +301,7 @@ button {
     align-items: center;
 }
 
-.circle{
+.circle {
     border:1px solid grey;
     width: 0.8rem;
     height: 0.8rem;
@@ -305,7 +310,7 @@ button {
 }
 
 /* Page control */
-.page-control{
+.page-control {
     z-index: 200;
     position: fixed;
     width: 1px;
@@ -386,7 +391,7 @@ a {
     transform: rotate(-45deg);
 }
 
-.page-control .prev em:before{
+.page-control .prev em:before {
     top: -50%;
     transform: rotate(45deg);
 }
@@ -407,7 +412,7 @@ a {
     transform: rotate(135deg);
 }
 
-.page-control .next em:after{
+.page-control .next em:after {
     top: calc(-50% + -1px);
     transform: rotate(-135deg);
 }

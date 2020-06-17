@@ -5,12 +5,6 @@ import { Link } from 'react-router-dom';
 import { AwesomeButton } from 'react-awesome-button';
 
 function UserInfo() {
-    let link = () => {
-        return (
-            <Link to="/portfolio"></Link>
-        )
-    }
-
     return (
         <div className="my-about-text">
             <h1 className="title">Привет, меня зовут Тимур Байрамгулов.</h1>
@@ -23,9 +17,6 @@ function UserInfo() {
             </div>
         </div>
     )
-};
-
-
-
+}
 
 export default UserInfo;

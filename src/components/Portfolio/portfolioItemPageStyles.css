@@ -1,4 +1,4 @@
-header{
+header {
     margin: 100px 20px 35px;
 }
 
@@ -23,7 +23,7 @@ header h2, .pages header h3 {
     font-weight: 400;
 }
 
-header .visit{
+header .visit {
     margin-top: 20px;
 }
 
@@ -47,7 +47,7 @@ header .visit{
     z-index: 10;
 }
 
-.media .bar i, .media .bar i:after, .media .bar i:before{
+.media .bar i, .media .bar i:after, .media .bar i:before {
     height: 12px;
     width: 12px;
     display: inline-block;
@@ -58,25 +58,25 @@ header .visit{
     left: 10px;
 }
 
-.media .bar i:after{
+.media .bar i:after {
     content: " ";
     left: 16px;
     background-color: #ffbd2e;
     top: 0;
 }
 
-.media .bar i:before{
+.media .bar i:before {
     content: " ";
     left: 32px;
     background-color: #28ca41;
     top: 0;
 }
 
-.media .slider{
+.media .slider {
     display: flex;
 }
 
-.media img{
+.media img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -121,7 +121,7 @@ header .visit{
     margin-bottom: .6em;
 }
 
-.text li{
+.text li {
     font-size: 1.3em;
     line-height: 1.65em;
     margin-bottom: 3px;

@@ -11,17 +11,29 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Work from './components/Portfolio/Work';
 import Contact from './components/Portfolio/Contact';
 
-import CpsPageComponent from "./components/Portfolio/Pages/CpsPageComponent";
-import SportHoldPageComponent from "./components/Portfolio/Pages/SportHoldPageComponent";
+// Внутренние страницы WORK
+import AzFishComponent from './components/Portfolio/Pages/AzFishComponent';
+import BakuCaviarComponent from './components/Portfolio/Pages/BakuCaviarComponent';
+import IpkoilComponent from './components/Portfolio/Pages/IpkoilComponent';
+import PmComponent from './components/Portfolio/Pages/PmComponent';
+import ZzbetonComponent from './components/Portfolio/Pages/ZzbetonComponent';
+import OltaComponent from './components/Portfolio/Pages/OltaComponent';
+import ArmatinalComponent from './components/Portfolio/Pages/ArmatinalComponent';
+import OcufaComponent from './components/Portfolio/Pages/OcufaComponent';
+
+// import CpsPageComponent from "./components/Portfolio/Pages/CpsPageComponent";
+// import SportHoldPageComponent from "./components/Portfolio/Pages/SportHoldPageComponent";
 import TvoederevoPageComponent from "./components/Portfolio/Pages/TvoederevoPageComponent";
 import KursorPageComponent from "./components/Portfolio/Pages/KursorPageComponent";
-import DivitPageComponent from "./components/Portfolio/Pages/DivitPageComponent";
-import SushiPageComponent from "./components/Portfolio/Pages/SushiPageComponent";
+// import DivitPageComponent from "./components/Portfolio/Pages/DivitPageComponent";
+// import SushiPageComponent from "./components/Portfolio/Pages/SushiPageComponent";
 import SaunaPageComponent from "./components/Portfolio/Pages/SaunaPageComponent";
-import NeutronPageComponent from "./components/Portfolio/Pages/NeutronPageComponent";
+// import NeutronPageComponent from "./components/Portfolio/Pages/NeutronPageComponent";
 import EshopPageComponent from "./components/Portfolio/Pages/EshopPageComponent";
 
+// Внутренние страницы APPS
 import MyPageComponent from "./components/Portfolio/WorkPages/MyPageComponent";
+import MercanComponent from './components/Portfolio/WorkPages/MercanComponent';
 
 const history = createBrowserHistory();
 
@@ -30,17 +42,27 @@ ReactDOM.render(
         <div>
             <Route path="/" exact component={App} />
             <Route path="/portfolio" exact component={Portfolio} />
-                <Route path="/portfolio/cps" component={CpsPageComponent} />
-                <Route path="/portfolio/sporthold" component={SportHoldPageComponent} />
+                <Route path="/portfolio/azfish" component={AzFishComponent} />
+                <Route path="/portfolio/bakucaviar" component={BakuCaviarComponent} />
+                <Route path="/portfolio/ipkoil" component={IpkoilComponent} />
+                <Route path="/portfolio/pm" component={PmComponent} />
+                <Route path="/portfolio/zzb" component={ZzbetonComponent} />
+                <Route path="/portfolio/olta" component={OltaComponent} />
+                <Route path="/portfolio/armatinal" component={ArmatinalComponent} />
+                <Route path="/portfolio/ocufa" component={OcufaComponent} />
+
+                {/*<Route path="/portfolio/cps" component={CpsPageComponent} />*/}
+                {/*<Route path="/portfolio/sporthold" component={SportHoldPageComponent} />*/}
                 <Route path="/portfolio/kursor" component={KursorPageComponent} />
-                <Route path="/portfolio/divitpro" component={DivitPageComponent} />
-                <Route path="/portfolio/sushiburger" component={SushiPageComponent} />
+                {/*<Route path="/portfolio/divitpro" component={DivitPageComponent} />*/}
+                {/*<Route path="/portfolio/sushiburger" component={SushiPageComponent} />*/}
                 <Route path="/portfolio/sauna" component={SaunaPageComponent} />
                 <Route path="/portfolio/tvoederevo" component={TvoederevoPageComponent} />
-                <Route path="/portfolio/neutron" component={NeutronPageComponent} />
+                {/*<Route path="/portfolio/neutron" component={NeutronPageComponent} />*/}
                 <Route path="/portfolio/eshop" component={EshopPageComponent} />
             <Route path="/apps" exact component={Work} />
                 <Route path="/apps/myPortfolio" component={MyPageComponent} />
+                <Route path="/apps/mercan" component={MercanComponent} />
             <Route path="/contact" exact component={Contact} />
         </div>
    </BrowserRouter>,
