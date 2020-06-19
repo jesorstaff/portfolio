@@ -8,10 +8,10 @@ function UserInfo() {
     return (
         <div className="my-about-text">
             <h1 className="title">Привет, меня зовут Тимур Байрамгулов.</h1>
-            <h2>Я являюсь <b>Junior JavaScript Web Developer.</b> Посмотрите мои работы на React JS <Link to="/apps"><b>здесь</b></Link></h2>
-            <h3>Так же вы можете посмотреть последние мои проекты на странице <Link to="/portfolio"><b>портфолио.</b></Link>
-            </h3>
-            <h3>Связь со мной через <a href="tg://resolve?domain=<@Timagood>">Telegram</a></h3>
+            <h2>Я – Junior Frontend Developer.</h2>
+            <h3>У меня отличный опыт в верстке - посмотрите <Link to="/portfolio"><b>портфолио,</b></Link></h3>
+            <h3>а сейчас работаю с ReactJS – посмотрите некоторые проекты по <Link to="/apps"><b>ссылке.</b></Link></h3>
+            <h3>Свяжитесь со мной в <a href="https://teleg.run/Timagood">Telegram</a></h3>
             <div className="app-btn">
                 <AwesomeButton type="primary" href="/portfolio">Перейти к портфолио</AwesomeButton>
             </div>

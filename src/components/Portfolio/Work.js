@@ -75,7 +75,6 @@ const UI = ({
     </div>
 );
 
-
 class Work extends Component{
     constructor(props) {
         super(props);
@@ -108,11 +107,11 @@ class Work extends Component{
 const PageNavigation = () => {
     return (
         <div className="page-control">
-            <NavLink to="/" className="prev">
+            <NavLink to="/portfolio" className="prev">
                 <span>Обо мне</span>
                 <em></em>
             </NavLink>
-            <NavLink to="/apps" className="next">
+            <NavLink to="/contact" className="next">
                 <span>Приложения</span>
                 <em></em>
             </NavLink>

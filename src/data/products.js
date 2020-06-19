@@ -6,8 +6,10 @@ import zzb from '../images/zzbeton.jpg';
 import olta from '../images/olta.jpg';
 import armatinal from '../images/armatinal.png';
 import ocufa from '../images/oc.png';
+import megafon from '../images/megafon.png';
 
 export const PRODUCTS = [
+    { category: "php", name: "Megafon Jazz Band", image: megafon, slug: 'megafon' },
     { category: "html5", name: "Azerbaijan Fish Farm", image: azfish, slug: 'azfish' },
     { category: "html5", name: "Baku Caviar", image: bakucaviar, slug: 'bakucaviar' },
     { category: "bitrix", name: "ipkoil", image: ipkoil, slug: 'ipkoil' },
