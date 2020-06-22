@@ -9,15 +9,12 @@ header h1 {
     font-weight: 700;
     letter-spacing: -2px;
     margin-bottom: .1em;
-    /*text-transform: lowercase;*/
-    width: 100%;
     text-shadow: 2px 2px 0 rgba(0,0,0,.15);
 }
 
 header h2, .pages header h3 {
     font-size: 1.15em;
     color: #8a8a8a;
-    font-family: Lato,Helvetica,Arial,sans-serif;
     line-height: 1.7em;
     word-spacing: .02em;
     font-weight: 400;
@@ -47,7 +44,9 @@ header .visit {
     z-index: 10;
 }
 
-.media .bar i, .media .bar i:after, .media .bar i:before {
+.media .bar i,
+.media .bar i:after,
+.media .bar i:before {
     height: 12px;
     width: 12px;
     display: inline-block;

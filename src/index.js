@@ -21,16 +21,10 @@ import OltaComponent from './components/Portfolio/Pages/OltaComponent';
 import ArmatinalComponent from './components/Portfolio/Pages/ArmatinalComponent';
 import OcufaComponent from './components/Portfolio/Pages/OcufaComponent';
 import MegafonComponent from './components/Portfolio/Pages/MegafonComponent';
-
 import TvoederevoPageComponent from "./components/Portfolio/Pages/TvoederevoPageComponent";
 import KursorPageComponent from "./components/Portfolio/Pages/KursorPageComponent";
 import SaunaPageComponent from "./components/Portfolio/Pages/SaunaPageComponent";
 import EshopPageComponent from "./components/Portfolio/Pages/EshopPageComponent";
-// import CpsPageComponent from "./components/Portfolio/Pages/CpsPageComponent";
-// import SportHoldPageComponent from "./components/Portfolio/Pages/SportHoldPageComponent";
-// import DivitPageComponent from "./components/Portfolio/Pages/DivitPageComponent";
-// import SushiPageComponent from "./components/Portfolio/Pages/SushiPageComponent";
-// import NeutronPageComponent from "./components/Portfolio/Pages/NeutronPageComponent";
 
 // Внутренние страницы APPS
 import MyPageComponent from "./components/Portfolio/WorkPages/MyPageComponent";
@@ -57,11 +51,6 @@ ReactDOM.render(
                 <Route path="/portfolio/sauna" component={SaunaPageComponent} />
                 <Route path="/portfolio/tvoederevo" component={TvoederevoPageComponent} />
                 <Route path="/portfolio/eshop" component={EshopPageComponent} />
-                {/*<Route path="/portfolio/divitpro" component={DivitPageComponent} />*/}
-                {/*<Route path="/portfolio/sushiburger" component={SushiPageComponent} />*/}
-                {/*<Route path="/portfolio/cps" component={CpsPageComponent} />*/}
-                {/*<Route path="/portfolio/sporthold" component={SportHoldPageComponent} />*/}
-                {/*<Route path="/portfolio/neutron" component={NeutronPageComponent} />*/}
             <Route path="/apps" exact component={Work} />
                 <Route path="/apps/myPortfolio" component={MyPageComponent} />
                 <Route path="/apps/mercan" component={MercanComponent} />

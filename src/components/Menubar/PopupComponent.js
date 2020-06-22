@@ -14,7 +14,7 @@ const contentStyle = {
 
 const overlayStyle = {
   background: "rgba(255,255,255,0.98)",
-}
+};
 
 const PopupComponent = () => {
   return (
@@ -28,6 +28,6 @@ const PopupComponent = () => {
       {close => <Menu close={close} />}
     </Popup>
   )
-}
+};
 
 export default PopupComponent;

@@ -13,6 +13,6 @@ const App = () => {
       <UserInfo />
     </div>
   )
-}
+};
 
 export default App;

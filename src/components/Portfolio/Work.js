@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import PopupComponent from '../Menubar/PopupComponent';
 import { PRODUCTS, PRODUCT_CATEGORIES } from '../../data/appProduct';
 import PortfolioFooterComponent from "./PortfolioFooterComponent";
+import PageNavigationComponent from "../PageNavigationComponent";
 
 // Название работ
 const ProductItem = ({ category, name, image, slug }) => (
@@ -93,7 +94,7 @@ class Work extends Component{
     render() {
         return (
             <div>
-                <PageNavigation />
+                <PageNavigationComponent prev="/portfolio" next="/contact" />
                 <div className="wrapper">
                     <PopupComponent />
                     <UI setCategory={this.setCategory} state={this.state} />
@@ -102,21 +103,6 @@ class Work extends Component{
             </div>
         )
     }
-}
-
-const PageNavigation = () => {
-    return (
-        <div className="page-control">
-            <NavLink to="/portfolio" className="prev">
-                <span>Обо мне</span>
-                <em></em>
-            </NavLink>
-            <NavLink to="/contact" className="next">
-                <span>Приложения</span>
-                <em></em>
-            </NavLink>
-        </div>
-    )
 }
 
 export default Work;
